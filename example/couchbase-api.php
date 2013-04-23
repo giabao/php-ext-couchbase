@@ -332,10 +332,11 @@ class Couchbase {
      *
      * @param array $ids an array containing all of the document identifiers
      * @param array $cas an array to store the cas identifiers of the documents
+     * @param int $flags TODO update document for this param
      * @return array an array containing the documents
      * @throws CouchbaseException if an error occurs
      */
-    function getMulti($ids, &$cas = array()) {
+    function getMulti($ids, &$cas = array(), $flags = 0) {
 
     }
 
